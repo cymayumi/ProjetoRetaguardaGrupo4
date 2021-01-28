@@ -11,7 +11,7 @@
 <div class="container">
 	<h1>Cadastro de Especialidades</h1>
 	
-	<form action="/RetaguardaGrupo4/EspecialidadeServlet" method="post">
+	<form action="/ProjetoRetaguardaGrupo4/EspecialidadeServlet" method="post">
 		<div class="form-group">
 			<label for="id-espec">Tipo de Especialidade</label>
 			<input type="text" name="nomeEspecialidade" id="id-espec" class="form-control">
@@ -21,7 +21,7 @@
 		<input type="hidden" name="acao" value="novo">
 		
 		<div class="text-center mt-4">
-			<a class="btn btn-danger" href="/RetaguardaGrupo4/EspecialidadeServlet">CANCELAR</a>
+			<a class="btn btn-danger" href="/ProjetoRetaguardaGrupo4/EspecialidadeServlet">CANCELAR</a>
 			<input type="submit" value="CADASTRAR" class="btn btn-primary">
 		</div>
 		

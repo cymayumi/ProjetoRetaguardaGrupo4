@@ -12,7 +12,7 @@
 <body>
 <div class="container">
 	<h1>Atualizar Exame</h1>
-	<form action="/RetaguardaGrupo4/ExameServlet" method="post">
+	<form action="/ProjetoRetaguardaGrupo4/ExameServlet" method="post">
 	
 	<div class="form-group">
 			<label for="id-exame">Tipo de Exame</label>
@@ -24,7 +24,7 @@
 		<input type="hidden" name="acao" value="editar">
 		
 		<div class="text-center mt-4">
-			<a class="btn btn-danger" href="/RetaguardaGrupo4/ExameServlet">CANCELAR</a>
+			<a class="btn btn-danger" href="/ProjetoRetaguardaGrupo4/ExameServlet">CANCELAR</a>
 			<input type="submit" value="SALVAR ALTERAÇÕES" class="btn btn-primary">
 		</div>
 	</form>

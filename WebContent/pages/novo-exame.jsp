@@ -11,7 +11,7 @@
 <div class="container">
 	<h1>Cadastro de Exames</h1>
 	
-	<form action="/RetaguardaGrupo4/ExameServlet" method="post">
+	<form action="/ProjetoRetaguardaGrupo4/ExameServlet" method="post">
 	<div class="form-group">
 			<label for="id-exame">Tipo de Exame</label>
 			<input type="text" name="nomeExame" id="id-exame" class="form-control">
@@ -21,7 +21,7 @@
 		<input type="hidden" name="acao" value="novo">
 		
 		<div class="text-center mt-4">
-			<a class="btn btn-danger" href="/RetaguardaGrupo4/ExameServlet">CANCELAR</a>
+			<a class="btn btn-danger" href="/ProjetoRetaguardaGrupo4/ExameServlet">CANCELAR</a>
 			<input type="submit" value="CADASTRAR" class="btn btn-primary">
 		</div>
 		

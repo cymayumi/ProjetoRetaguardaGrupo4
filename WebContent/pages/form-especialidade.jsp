@@ -12,7 +12,7 @@
 <body>
 <div class="container">
 	<h1>Atualizar Especialidade</h1>
-	<form action="/RetaguardaGrupo4/EspecialidadeServlet" method="post">
+	<form action="/ProjetoRetaguardaGrupo4/EspecialidadeServlet" method="post">
 	
 	<div class="form-group">
 			<label for="id-espe">Tipo de Especialidade</label>
@@ -24,7 +24,7 @@
 		
 		
 		<div class="text-center mt-4">
-			<a class="btn btn-danger" href="/RetaguardaGrupo4/EspecialidadeServlet">CANCELAR</a>
+			<a class="btn btn-danger" href="/ProjetoRetaguardaGrupo4/EspecialidadeServlet">CANCELAR</a>
 			<input type="submit" value="SALVAR ALTERAÇÕES" class="btn btn-primary">
 		</div>
 	</form>

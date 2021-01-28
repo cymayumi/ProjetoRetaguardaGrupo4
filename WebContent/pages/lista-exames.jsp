@@ -21,7 +21,7 @@
         <a class="nav-link" href="#">Exames <span class="sr-only">(current)</span></a>
       </li>
       <li class="nav-item">
-        <a class="nav-link" href="/RetaguardaGrupo4/EspecialidadeServlet">Especialidades</a>
+        <a class="nav-link" href="/ProjetoRetaguardaGrupo4/EspecialidadeServlet">Especialidades</a>
       </li>
     </ul>
   </div>
@@ -31,7 +31,7 @@
 	<div class="row mt-4">
 		<h1 class="col-8">Lista de Exames</h1>
 		<div class="col-4 text-right">
-		<a href="/RetaguardaGrupo4/ExameServlet?acao=novo" class="btn btn-primary ">ADD EXAME</a>
+		<a href="/ProjetoRetaguardaGrupo4/ExameServlet?acao=novo" class="btn btn-primary ">ADD EXAME</a>
 		</div>
 	</div>
 	<table class="table table-striped">
@@ -46,9 +46,9 @@
 				<td>${exame.idTipoExame}</td>
 				<td>${exame.dsTipoExame}</td>
 				<td><a class="btn btn-info"
-					href="/RetaguardaGrupo4/ExameServlet?acao=editar&id=${exame.idTipoExame}">EDITAR</a></td>
+					href="/ProjetoRetaguardaGrupo4/ExameServlet?acao=editar&id=${exame.idTipoExame}">EDITAR</a></td>
 				<td><a class="btn btn-danger"
-					href="/RetaguardaGrupo4/ExameServlet?acao=remover&id=${exame.idTipoExame}">REMOVER</a></td>
+					href="/ProjetoRetaguardaGrupo4/ExameServlet?acao=remover&id=${exame.idTipoExame}">REMOVER</a></td>
 			</tr>
 		</c:forEach>
 	</table>

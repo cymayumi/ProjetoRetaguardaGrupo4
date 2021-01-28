@@ -19,10 +19,10 @@
   <div class="collapse navbar-collapse" id="navbarNav">
     <ul class="navbar-nav">
       <li class="nav-item active">
-        <a class="nav-link" href="/RetaguardaGrupo4/ExameServlet">Exames</a>
+        <a class="nav-link" href="/ProjetoRetaguardaGrupo4/ExameServlet">Exames</a>
       </li>
       <li class="nav-item">
-        <a class="nav-link" href="/RetaguardaGrupo4/EspecialidadeServlet">Especialidades <span class="sr-only">(current)</span></a>
+        <a class="nav-link" href="/ProjetoRetaguardaGrupo4/EspecialidadeServlet">Especialidades <span class="sr-only">(current)</span></a>
       </li>
     </ul>
   </div>
@@ -31,7 +31,7 @@
 	<div class="row mt-4">
 		<h1 class="col-8">Lista de Especialidades</h1>
 		<div class="col-4 text-right">
-		<a href="/RetaguardaGrupo4/EspecialidadeServlet?acao=novo" class="btn btn-primary ">ADD ESPECIALIDADE</a>
+		<a href="/ProjetoRetaguardaGrupo4/EspecialidadeServlet?acao=novo" class="btn btn-primary ">ADD ESPECIALIDADE</a>
 		</div>
 	</div>
 
@@ -47,9 +47,9 @@
 				<td>${especialidade.idTipoEspecialidade}</td>
 				<td>${especialidade.dsTipoEspecialidade}</td>
 				<td><a class="btn btn-info"
-					href="/RetaguardaGrupo4/EspecialidadeServlet?acao=editar&id=${especialidade.idTipoEspecialidade}">EDITAR</a></td>
+					href="/ProjetoRetaguardaGrupo4/EspecialidadeServlet?acao=editar&id=${especialidade.idTipoEspecialidade}">EDITAR</a></td>
 				<td><a class="btn btn-danger"
-					href="/RetaguardaGrupo4/EspecialidadeServlet?acao=remover&id=${especialidade.idTipoEspecialidade}">REMOVER</a></td>
+					href="/ProjetoRetaguardaGrupo4/EspecialidadeServlet?acao=remover&id=${especialidade.idTipoEspecialidade}">REMOVER</a></td>
 			</tr>
 		</c:forEach>
 	</table>
