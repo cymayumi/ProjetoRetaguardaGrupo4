@@ -127,14 +127,14 @@ public class EspecialidadeServlet extends HttpServlet {
 		String acao = request.getParameter("acao");
 
 		if (acao.equals("editar"))
-			this.atualizarEspecialidade(request, response);
+			this.atualizarEspecialidade(request);
 		else if (acao.equals("novo"))
-			this.inserirEspecialidade(request, response);
+			this.inserirEspecialidade(request);
 
 		listarEspecialidade(request, response);
 	}
 
-	private void atualizarEspecialidade(HttpServletRequest request, HttpServletResponse response) {
+	private void atualizarEspecialidade(HttpServletRequest request) {
 		
 		BigInteger id = BigInteger.valueOf(Integer.valueOf(request.getParameter("id")).intValue());
 		String especialidadeNome = request.getParameter("nomeEspecialidade");
@@ -150,7 +150,7 @@ public class EspecialidadeServlet extends HttpServlet {
 		em.getTransaction().commit();
 	}
 
-	private void inserirEspecialidade(HttpServletRequest request, HttpServletResponse response) {
+	private void inserirEspecialidade(HttpServletRequest request) {
 
 		String especialidadeNome = request.getParameter("nomeEspecialidade");
 

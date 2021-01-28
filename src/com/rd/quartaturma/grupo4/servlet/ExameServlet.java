@@ -125,14 +125,14 @@ public class ExameServlet extends HttpServlet {
 		String acao = request.getParameter("acao");
 
 		if (acao.equals("editar"))
-			this.atualizarExame(request, response);
+			this.atualizarExame(request);
 		else if (acao.equals("novo"))
-			this.inserirExame(request, response);
+			this.inserirExame(request);
 
 		listarExames(request, response);
 	}
 
-	private void atualizarExame(HttpServletRequest request, HttpServletResponse response) {
+	private void atualizarExame(HttpServletRequest request) {
 		
 		BigInteger id = BigInteger.valueOf(Integer.valueOf(request.getParameter("id")).intValue());
 		String exameNome = request.getParameter("nomeExame");
@@ -148,7 +148,7 @@ public class ExameServlet extends HttpServlet {
 		em.getTransaction().commit();
 	}
 
-	private void inserirExame(HttpServletRequest request, HttpServletResponse response) {
+	private void inserirExame(HttpServletRequest request) {
 
 		String exameNome = request.getParameter("nomeExame");
 
